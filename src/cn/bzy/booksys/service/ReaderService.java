@@ -61,7 +61,7 @@ public class ReaderService {
         /**
          * 从库存集合中减少一个，借阅集合中增加一个
          */
-        
+
     }
 
 }
