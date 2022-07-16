@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c008c99-1dc1-46e0-949d-fafd9241cc13" name="Default Changelist" comment="simple booking system &#10;second commit&#10;简单调整">
+    <list default="true" id="2c008c99-1dc1-46e0-949d-fafd9241cc13" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/BookSysMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/BookSysMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/service/ReaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/service/ReaderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/util/BookSysUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/util/BookSysUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +46,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -83,6 +87,7 @@
       <workItem from="1657903850983" duration="439000" />
       <workItem from="1657904304645" duration="538000" />
       <workItem from="1657904857798" duration="4071000" />
+      <workItem from="1657908983044" duration="5894000" />
     </task>
     <task id="LOCAL-00001" summary="simple booking system">
       <created>1657902126639</created>
@@ -105,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657908870351</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="simple booking system &#10;second commit&#10;简单调整">
+      <created>1657909034051</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657909034051</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,5 +140,16 @@
     <MESSAGE value="simple booking system commit" />
     <MESSAGE value="simple booking system &#10;second commit&#10;简单调整" />
     <option name="LAST_COMMIT_MESSAGE" value="simple booking system &#10;second commit&#10;简单调整" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cn/bzy/booksys/service/ReaderService.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

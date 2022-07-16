@@ -24,6 +24,15 @@ public class BookSysMain {
      * 图书数据库（库存集合）
      */
     public List<Book> bookDB = new ArrayList<>();
+    {
+        Book book = new Book();
+        book.setName("西游记");
+        book.setAuthor("吴承恩");
+        book.setPrice(100.0);
+        book.setStock(100);
+        bookDB.add(book);
+    }
+
 
     /**
      * 图书数据库（借阅集合）
@@ -52,7 +61,7 @@ public class BookSysMain {
                 break;
             case "0":
                 //退出
-                bookSysExit();
+                BookSysUtil.bookSysExit();
                 break;
         }
 
@@ -66,7 +75,5 @@ public class BookSysMain {
         }
     }
 
-    private static void bookSysExit() {
-        System.exit(0);
-    }
+
 }
