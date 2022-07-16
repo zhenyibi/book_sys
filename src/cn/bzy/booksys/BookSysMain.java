@@ -64,15 +64,6 @@ public class BookSysMain {
                 BookSysUtil.bookSysExit();
                 break;
         }
-
-
-        if ("1".equals(typeValue) ) {
-
-        }
-
-        if ("2" == typeValue) {
-            System.out.println("2");
-        }
     }
 
 

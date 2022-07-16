@@ -4,8 +4,8 @@
     <list default="true" id="2c008c99-1dc1-46e0-949d-fafd9241cc13" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/BookSysMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/BookSysMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/service/ReaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/service/ReaderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/util/BookSysUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/util/BookSysUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/util/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/util/PageUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -87,7 +95,7 @@
       <workItem from="1657903850983" duration="439000" />
       <workItem from="1657904304645" duration="538000" />
       <workItem from="1657904857798" duration="4071000" />
-      <workItem from="1657908983044" duration="5894000" />
+      <workItem from="1657908983044" duration="10147000" />
     </task>
     <task id="LOCAL-00001" summary="simple booking system">
       <created>1657902126639</created>
@@ -117,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657909034051</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="simple booking system &#10;完善读者功能">
+      <created>1657980737768</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657980737768</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,17 +154,7 @@
     <MESSAGE value="simple booking system" />
     <MESSAGE value="simple booking system commit" />
     <MESSAGE value="simple booking system &#10;second commit&#10;简单调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple booking system &#10;second commit&#10;简单调整" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/bzy/booksys/service/ReaderService.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="simple booking system &#10;完善读者功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple booking system &#10;完善读者功能" />
   </component>
 </project>
