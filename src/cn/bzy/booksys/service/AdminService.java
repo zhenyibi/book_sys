@@ -41,7 +41,7 @@ public class AdminService {
                 break;
             case "0":
                 //返回上一层
-                sysDTO.getBookSysMain().home(sysDTO);
+                sysDTO.getHomeService().home(sysDTO);
                 break;
             default:
                 break;
@@ -62,7 +62,7 @@ public class AdminService {
         String bookName = scanner.nextLine();
         //判断书籍是否存在
         Boolean exist = Boolean.FALSE;
-        for (Book book : sysDTO.getBookSysMain().bookDB) {
+        for (Book book : sysDTO.getBookDB().bookDB) {
             if(book.getName().equals(bookName)){
                 exist = Boolean.TRUE;
             }
@@ -74,7 +74,7 @@ public class AdminService {
 
         //判断书籍是否借出
         Boolean borrowExist = Boolean.FALSE;
-        for (Book book : sysDTO.getBookSysMain().borrowBookDB) {
+        for (Book book : sysDTO.getBookDB().borrowBookDB) {
             if(book.getName().equals(bookName)){
                 borrowExist = Boolean.TRUE;
             }
@@ -85,7 +85,7 @@ public class AdminService {
         }
 
         //删除库存列表书籍
-        Iterator<Book> iterator = sysDTO.getBookSysMain().bookDB.iterator();
+        Iterator<Book> iterator = sysDTO.getBookDB().bookDB.iterator();
         while(iterator.hasNext()){
             if(iterator.next().getName().equals(bookName)){
                 iterator.remove();
@@ -101,7 +101,7 @@ public class AdminService {
         String bookName = scanner.nextLine();
         Boolean exist = Boolean.FALSE;
         Book oldBook = null;
-        for (Book book : sysDTO.getBookSysMain().bookDB) {
+        for (Book book : sysDTO.getBookDB().bookDB) {
             if(book.getName().equals(bookName)){
                 exist = Boolean.TRUE;
                 oldBook = book;
@@ -158,14 +158,14 @@ public class AdminService {
         book.setPrice(Double.parseDouble(scanner.nextLine()));
 
         //判断库存中是否有相同书籍
-        for (Book book1 : sysDTO.getBookSysMain().bookDB) {
+        for (Book book1 : sysDTO.getBookDB().bookDB) {
             if (book1.getName().equals(book.getName())) {
                 book1.setStock(book1.getStock() + book.getStock());
                 System.out.println("图书添加成功!");
                 return;
             }
         }
-        sysDTO.getBookSysMain().bookDB.add(book);
+        sysDTO.getBookDB().bookDB.add(book);
         System.out.println("图书添加成功!");
 
     }
@@ -173,11 +173,11 @@ public class AdminService {
     private void lookSysBookList(SysDTO sysDTO) {
         System.out.println("***************库存列表**********************");
         System.out.println("书名          作者          库存          价格");
-        if (sysDTO.getBookSysMain().bookDB.size() == 0) {
+        if (sysDTO.getBookDB().bookDB.size() == 0) {
             System.out.println("暂无书籍");
             return;
         }
-        for (Book book : sysDTO.getBookSysMain().bookDB) {
+        for (Book book : sysDTO.getBookDB().bookDB) {
             System.out.println(book.getName() + "          " + book.getAuthor() + "          " + book.getStock() + "          " + book.getPrice());
         }
         System.out.println("*****************************************");
@@ -186,11 +186,11 @@ public class AdminService {
     private void lookBorrowBook(SysDTO sysDTO) {
         System.out.println("***************借阅列表**********************");
         System.out.println("书名          作者          库存          价格");
-        if (sysDTO.getBookSysMain().borrowBookDB.size() == 0) {
+        if (sysDTO.getBookDB().borrowBookDB.size() == 0) {
             System.out.println("暂无书籍");
             return;
         }
-        for (Book book : sysDTO.getBookSysMain().borrowBookDB) {
+        for (Book book : sysDTO.getBookDB().borrowBookDB) {
             System.out.println(book.getName() + "          " + book.getAuthor() + "          " + book.getStock() + "          " + book.getPrice());
         }
         System.out.println("********************************************");

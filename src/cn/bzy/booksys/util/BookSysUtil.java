@@ -45,7 +45,7 @@ public class BookSysUtil {
     }
 
     public static void removeBook(SysDTO sysDTO, String bookName) {
-        Iterator<Book> iterator = sysDTO.getBookSysMain().borrowBookDB.iterator();
+        Iterator<Book> iterator = sysDTO.getBookDB().borrowBookDB.iterator();
         while(iterator.hasNext()){
             if(iterator.next().getName().equals(bookName)){
                 iterator.remove();

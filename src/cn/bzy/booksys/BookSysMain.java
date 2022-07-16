@@ -3,7 +3,9 @@ package cn.bzy.booksys;
 import cn.bzy.booksys.dto.SysDTO;
 import cn.bzy.booksys.entity.Book;
 import cn.bzy.booksys.service.AdminService;
+import cn.bzy.booksys.service.HomeService;
 import cn.bzy.booksys.service.ReaderService;
+import cn.bzy.booksys.util.BookDB;
 import cn.bzy.booksys.util.BookSysUtil;
 import cn.bzy.booksys.util.PageUtil;
 
@@ -18,53 +20,20 @@ import java.util.Scanner;
  */
 public class BookSysMain {
 
-    ReaderService readerService = new ReaderService();
-    AdminService adminService = new AdminService();
-    /**
-     * 图书数据库（库存集合）
-     */
-    public List<Book> bookDB = new ArrayList<>();
-    {
-        Book book = new Book();
-        book.setName("西游记");
-        book.setAuthor("吴承恩");
-        book.setPrice(100.0);
-        book.setStock(100);
-        bookDB.add(book);
-    }
-
-
-    /**
-     * 图书数据库（借阅集合）
-     */
-    public List<Book> borrowBookDB = new ArrayList<>();
-
     public static void main(String[] args) {
 
         SysDTO sysDTO = new SysDTO();
-        sysDTO.setBookSysMain(new BookSysMain());
-        sysDTO.getBookSysMain().home(sysDTO);
+        sysDTO.setBookDB(new BookDB());
+        sysDTO.setHomeService(new HomeService());
+        sysDTO.setAdminService(new AdminService());
+        sysDTO.setReaderService(new ReaderService());
+
+        //首页功能
+        sysDTO.getHomeService().home(sysDTO);
 
     }
 
-    public void home(SysDTO sysDTO){
-        PageUtil.home();
-        String typeValue = BookSysUtil.inputValue(Arrays.asList("0", "1", "2"));
-        switch (typeValue){
-            case "1":
-                //读者
-                readerService.readFunction(sysDTO);
-                break;
-            case "2":
-                //管理员
-                adminService.adminFunction(sysDTO);
-                break;
-            case "0":
-                //退出
-                BookSysUtil.bookSysExit();
-                break;
-        }
-    }
+
 
 
 }

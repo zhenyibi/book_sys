@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c008c99-1dc1-46e0-949d-fafd9241cc13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/util/BookDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/BookSysMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/BookSysMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/dto/SysDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/dto/SysDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/util/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/util/PageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/service/HomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/service/HomeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/service/ReaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/service/ReaderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +79,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BookSysMain" />
@@ -95,7 +111,7 @@
       <workItem from="1657903850983" duration="439000" />
       <workItem from="1657904304645" duration="538000" />
       <workItem from="1657904857798" duration="4071000" />
-      <workItem from="1657908983044" duration="10147000" />
+      <workItem from="1657908983044" duration="12008000" />
     </task>
     <task id="LOCAL-00001" summary="simple booking system">
       <created>1657902126639</created>
@@ -132,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657980737768</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="simple booking system &#10;完善管理员功能">
+      <created>1657985068833</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657985068833</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +178,7 @@
     <MESSAGE value="simple booking system commit" />
     <MESSAGE value="simple booking system &#10;second commit&#10;简单调整" />
     <MESSAGE value="simple booking system &#10;完善读者功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple booking system &#10;完善读者功能" />
+    <MESSAGE value="simple booking system &#10;完善管理员功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple booking system &#10;完善管理员功能" />
   </component>
 </project>

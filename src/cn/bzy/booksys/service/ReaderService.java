@@ -37,7 +37,7 @@ public class ReaderService {
                 break;
             case "0":
                 //返回上一层
-                sysDTO.getBookSysMain().home(sysDTO);
+                sysDTO.getHomeService().home(sysDTO);
                 break;
             default:
                 break;
@@ -57,13 +57,13 @@ public class ReaderService {
         System.out.print("请输入归还的书名：");
         String bookName = scanner.nextLine();
 
-        Book book = BookSysUtil.getBook(sysDTO.getBookSysMain().borrowBookDB, bookName);
+        Book book = BookSysUtil.getBook(sysDTO.getBookDB().borrowBookDB, bookName);
         if (Objects.isNull(book)) {
             System.out.println("没借过这本书！");
             return;
         }
         book.setStock(book.getStock() - 1);
-        Book book_ = BookSysUtil.getBook(sysDTO.getBookSysMain().bookDB, bookName);
+        Book book_ = BookSysUtil.getBook(sysDTO.getBookDB().bookDB, bookName);
         book_.setStock(book_.getStock() + 1);
 
         if (book.getStock() == 0) {
@@ -77,11 +77,11 @@ public class ReaderService {
     private void lookBorrowBook(SysDTO sysDTO) {
         System.out.println("***************借阅列表**********************");
         System.out.println("书名          作者          库存          价格");
-        if (sysDTO.getBookSysMain().borrowBookDB.size() == 0) {
+        if (sysDTO.getBookDB().borrowBookDB.size() == 0) {
             System.out.println("暂无书籍");
             return;
         }
-        for (Book book : sysDTO.getBookSysMain().borrowBookDB) {
+        for (Book book : sysDTO.getBookDB().borrowBookDB) {
             System.out.println(book.getName() + "          " + book.getAuthor() + "          " + book.getStock() + "          " + book.getPrice());
         }
         System.out.println("********************************************");
@@ -90,11 +90,11 @@ public class ReaderService {
     private void lookSysBookList(SysDTO sysDTO) {
         System.out.println("***************库存列表**********************");
         System.out.println("书名          作者          库存          价格");
-        if (sysDTO.getBookSysMain().bookDB.size() == 0) {
+        if (sysDTO.getBookDB().bookDB.size() == 0) {
             System.out.println("暂无书籍");
             return;
         }
-        for (Book book : sysDTO.getBookSysMain().bookDB) {
+        for (Book book : sysDTO.getBookDB().bookDB) {
             System.out.println(book.getName() + "          " + book.getAuthor() + "          " + book.getStock() + "          " + book.getPrice());
         }
         System.out.println("*****************************************");
@@ -108,11 +108,11 @@ public class ReaderService {
         System.out.print("请输入要借阅的书名:");
         String bookName = scanner.nextLine();
         Boolean bookExist = Boolean.FALSE;
-        for (Book book : sysDTO.getBookSysMain().bookDB) {
+        for (Book book : sysDTO.getBookDB().bookDB) {
             if (book.getName().equals(bookName)) {
                 bookExist = Boolean.TRUE;
                 Boolean borrowedExist = Boolean.FALSE;
-                for (Book borrowBook : sysDTO.getBookSysMain().borrowBookDB) {
+                for (Book borrowBook : sysDTO.getBookDB().borrowBookDB) {
                     if (borrowBook.getName().equals(bookName)) {
                         borrowedExist = Boolean.TRUE;
                         borrowBook.setStock(borrowBook.getStock() + 1);
@@ -130,7 +130,7 @@ public class ReaderService {
                 book_.setStock(1);
                 //减库存
                 book.setStock(book.getStock() - 1);
-                sysDTO.getBookSysMain().borrowBookDB.add(book_);
+                sysDTO.getBookDB().borrowBookDB.add(book_);
 
             }
 
