@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c008c99-1dc1-46e0-949d-fafd9241cc13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/util/BookDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/service/FunctionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/BookSysMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/BookSysMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/dto/SysDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/dto/SysDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/service/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/service/HomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/service/HomeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/bzy/booksys/service/ReaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/bzy/booksys/service/ReaderService.java" afterDir="false" />
@@ -19,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -111,7 +111,7 @@
       <workItem from="1657903850983" duration="439000" />
       <workItem from="1657904304645" duration="538000" />
       <workItem from="1657904857798" duration="4071000" />
-      <workItem from="1657908983044" duration="12008000" />
+      <workItem from="1657908983044" duration="13330000" />
     </task>
     <task id="LOCAL-00001" summary="simple booking system">
       <created>1657902126639</created>
@@ -155,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657985068833</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="simple booking system &#10;代码调整">
+      <created>1657986946286</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657986946286</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +186,7 @@
     <MESSAGE value="simple booking system &#10;second commit&#10;简单调整" />
     <MESSAGE value="simple booking system &#10;完善读者功能" />
     <MESSAGE value="simple booking system &#10;完善管理员功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple booking system &#10;完善管理员功能" />
+    <MESSAGE value="simple booking system &#10;代码调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple booking system &#10;代码调整" />
   </component>
 </project>

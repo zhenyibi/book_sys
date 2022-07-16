@@ -29,7 +29,7 @@ public class BookSysMain {
         sysDTO.setReaderService(new ReaderService());
 
         //首页功能
-        sysDTO.getHomeService().home(sysDTO);
+        sysDTO.getHomeService().function(sysDTO);
 
     }
 

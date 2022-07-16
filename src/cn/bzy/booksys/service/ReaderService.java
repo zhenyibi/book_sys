@@ -13,9 +13,10 @@ import java.util.Scanner;
  * @author zhenyiBi
  * @date 2022/7/15
  */
-public class ReaderService {
-    public void readFunction(SysDTO sysDTO) {
+public class ReaderService implements FunctionService{
 
+    @Override
+    public void function(SysDTO sysDTO) {
         PageUtil.reader();
         String readerType = BookSysUtil.inputValue(Arrays.asList("0", "1", "2", "3", "4"));
         switch (readerType) {
@@ -37,14 +38,14 @@ public class ReaderService {
                 break;
             case "0":
                 //返回上一层
-                sysDTO.getHomeService().home(sysDTO);
+                sysDTO.getHomeService().function(sysDTO);
                 break;
             default:
                 break;
         }
-        readFunction(sysDTO);
-
+        function(sysDTO);
     }
+
 
     private void remandBorrowBook(SysDTO sysDTO) {
         /**

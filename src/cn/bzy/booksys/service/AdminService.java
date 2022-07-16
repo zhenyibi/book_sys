@@ -13,8 +13,10 @@ import java.util.Scanner;
  * @author zhenyiBi
  * @date 2022/7/15
  */
-public class AdminService {
-    public void adminFunction(SysDTO sysDTO) {
+public class AdminService implements FunctionService{
+
+    @Override
+    public void function(SysDTO sysDTO) {
         PageUtil.admin();
         String type = BookSysUtil.inputValue(Arrays.asList("0", "1", "2", "3", "4", "5"));
 
@@ -41,13 +43,15 @@ public class AdminService {
                 break;
             case "0":
                 //返回上一层
-                sysDTO.getHomeService().home(sysDTO);
+                sysDTO.getHomeService().function(sysDTO);
                 break;
             default:
                 break;
         }
-        adminFunction(sysDTO);
+        function(sysDTO);
+
     }
+
 
     private void deleteSysBook(SysDTO sysDTO) {
         /**
